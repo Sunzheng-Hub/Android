@@ -38,7 +38,7 @@ public class SimpleToHXW extends BaseFragment {
         mTransBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new HttpUtil(ADDRESS,mInputText.getText().toString(),TO_HXW,APP_KEY).sendHttpRequest(new HttpCallbackListener() {
+                new HttpUtil(getActivity(),ADDRESS,mInputText.getText().toString(),TO_HXW,APP_KEY).sendHttpRequest(new HttpCallbackListener() {
                     @Override
                     public void onFinish(String response) {
                         outputText = parseJson(response);

@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * Created by Anonymous on 2016/3/29.
@@ -35,10 +34,12 @@ public class SimpleToComplex extends BaseFragment {
         mTransBtn = (Button) view.findViewById(R.id.s2c_btn);
         mOutputText = (TextView) view.findViewById(R.id.s2c_output_text);
 
+
+
         mTransBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new HttpUtil(ADDRESS,mInputText.getText().toString(),TO_COMPLEX,APP_KEY).sendHttpRequest(new HttpCallbackListener() {
+                new HttpUtil(getActivity(),ADDRESS,mInputText.getText().toString(),TO_COMPLEX,APP_KEY).sendHttpRequest(new HttpCallbackListener() {
                     @Override
                     public void onFinish(String response) {
                         outputText = parseJson(response);
@@ -52,7 +53,7 @@ public class SimpleToComplex extends BaseFragment {
 
                     @Override
                     public void onError(Exception e) {
-                        Toast.makeText(getActivity(),"出错啦.",Toast.LENGTH_SHORT).show();
+
                     }
                 });
             }
@@ -60,5 +61,7 @@ public class SimpleToComplex extends BaseFragment {
 
         super.onActivityCreated(savedInstanceState);
     }
+
+
 
 }

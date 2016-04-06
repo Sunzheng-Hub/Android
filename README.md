@@ -25,3 +25,11 @@ TransitionAndGuidingPage
 过渡动画与引导页
 
 要点：Handler.postDelayed()实现过渡动画、ViewPager+FragmentPagerAdapter实现引导页，通过SharedPreferences判断是否第一次启动程序，是则启动引导页，否则直接进入主页
+
+------------------------------------------------------------------------------------------
+
+Calculator
+
+计算器
+
+要点：String的操作，嵌套if，逻辑代码

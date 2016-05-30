@@ -25,3 +25,15 @@
 ### Calculator 计算器
 
 要点：String的操作，嵌套if，逻辑代码
+
+---
+
+### DrawingBoard 画板
+
+要点：Paint、Path
+
+---
+
+### YiMusic MediaPlayer
+
+要点：MediaPlayer、SeekBar

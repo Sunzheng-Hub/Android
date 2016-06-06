@@ -37,3 +37,9 @@
 ### YiMusic MediaPlayer
 
 要点：MediaPlayer、SeekBar
+
+---
+
+### Joker 笑话大全
+
+要点：RecyclerView、HttpURLConnection、解析Json

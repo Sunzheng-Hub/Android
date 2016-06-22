@@ -21,6 +21,7 @@
 
 要点：使用了PullToRefresh、butterknife、fastjson、okhttp、logger
 
+---
 
 ### TransitionAndGuidingPage 过渡动画与引导页
 

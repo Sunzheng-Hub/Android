@@ -19,7 +19,7 @@
 
 ### FunnyTime 段子手
 
-要点：使用了PullToRefresh、butterknife、fastjson、okhttp、logger等开源框架
+要点：使用了PullToRefresh、butterknife、fastjson、okhttp、logger等开源框架。下拉加载最新数据，上拉加载更多，使用okhttp进行网络请求，fastjson快速解析返回的json，butterknife快速绑定view
 
 ---
 
